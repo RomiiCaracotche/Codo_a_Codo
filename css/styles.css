@@ -98,6 +98,15 @@
     gap: 25px;
 }
 
+.img-const{
+    object-fit: cover;
+}
+
+.div-carrusel{
+    width: 50%;
+    text-align: end;
+}
+
 /* 768 y 480 */
 
 @media screen and (max-width: 480px) {
@@ -159,6 +168,11 @@
         margin: 0 0 10px 0; 
     }
 
+    .div-carrusel{
+        width: 90%;
+        text-align: center;
+    }
+
  }
 
  @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -218,6 +232,11 @@
         justify-content: center;
         align-items: center;
         gap: 25px;
+    }
+
+    .div-carrusel{
+        width: 90%;
+        text-align: center;
     }
     
 }

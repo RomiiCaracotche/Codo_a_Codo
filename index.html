@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Codo a Codo</title>
+    <link rel="shortcut icon" href="./assets/img/codoacodo.png">
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -24,7 +25,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 just-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#conferencia">La Conferencia</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-muted" href="#oradores">Los Oradores</a>
@@ -44,7 +45,7 @@
             </nav>
         </header>
 
-        <main class="w-100 h-70">
+        <main class="w-100 h-70" id="conferencia">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,7 +55,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex flex-column w-100 vh-100 align-items-end justify-content-center text-white fw-semibold bg-main1 alignitems">
-                            <div class="w-50 text-end margin-carrusel width-carrusel pad-carrusel">
+                            <div class="margin-carrusel width-carrusel pad-carrusel div-carrusel">
                                 <h2 class="mb-3 text-modif-cen">Conf Bs As</h2>
                                 <p class="mb-4 text-modif-just">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
                                 <div class="alinearbotones">
@@ -70,8 +71,8 @@
                                 <h2 class="col mb-3">Conf Bs As</h2>
                                 <p class="col mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
                                 <div class="col">
-                                    <a href="" class="btn btn-outline-secondary me-2">Quiero ser orador</a>
-                                    <a href="" class="btn btn-success">Comprar tickets</a>
+                                    <a href="#formulario" class="btn btn-outline-secondary me-2">Quiero ser orador</a>
+                                    <a href="./pages/comprartickets.html" class="btn btn-success">Comprar tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -82,8 +83,8 @@
                                 <h2 class="col mb-3">Conf Bs As</h2>
                                 <p class="col mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
                                 <div class="col">
-                                    <a href="" class="btn btn-outline-secondary me-2">Quiero ser orador</a>
-                                    <a href="" class="btn btn-success">Comprar tickets</a>
+                                    <a href="#formulario" class="btn btn-outline-secondary me-2">Quiero ser orador</a>
+                                    <a href="./pages/comprartickets.html" class="btn btn-success">Comprar tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -100,61 +101,12 @@
               </div>
         </main>    
 
-        <!-- <section class="d-flex flex-column w-100 vh-100 align-items-center" id="oradores">
+        
+        <section class="d-flex flex-column align-items-center mb-4" id="oradores">
             <p class="mt-2">Conoce a los <br> <b class="h5">ORADORES</b></p>
-            <div class="row w-100 vh-100 d-flex flex-row justify-content-center gap-4 overflow-auto">
-                <div class="col-xs-12 col-sm-12 col-md-4 card overflow-auto card-wh overflow-auto">
-                    <img src="./assets/img/steve.jpg" class="card-w" alt="..."/>
-                    <div class="card-body card-w">
-                        <h5 class="card-title">Steve Jobs</h5>
-                        <p class="card-text overflow-auto">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-4 card overflow-auto card-wh overflow-auto">
-                    <img src="./assets/img/bill.jpg" class="card-w" alt="..."/>
-                    <div class="card-body" style="width: 300px">
-                        <h5 class="card-title">Bill Gates</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Praesentium, voluptate dignissimos! Debitis ratione consectetur
-                            labore, dolor alias, quidem incidunt dignissimos tempore fuga
-                            voluptatum velit necessitatibus. Sint dolorum facilis officia
-                            voluptas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-4 card overflow-auto card-wh">
-                    <img src="./assets/img/ada.jpeg" class="card-w" alt="..."/>
-                    <div class="card-body" style="width: 300px">
-                        <h5 class="card-title">Ada Lovelace</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Praesentium, voluptate dignissimos! Debitis ratione consectetur
-                            labore, dolor alias, quidem incidunt dignissimos tempore fuga
-                            voluptatum velit necessitatibus. Sint dolorum facilis officia
-                            voluptas. Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Praesentium, voluptate dignissimos! Debitis ratione
-                            consectetur labore, dolor alias, quidem incidunt dignissimos
-                            tempore fuga voluptatum velit necessitatibus. Sint dolorum
-                            facilis officia voluptas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section class="d-flex flex-column align-items-center  mb-4" id="oradores">
-<!--    <section class="d-flex flex-column w-100 vh-100 align-items-center  mb-4" id="oradores"> -->
-            <p class="mt-2">Conoce a los <br> <b class="h5">ORADORES</b></p>
-            <!-- <div class=""> -->
-            <!-- <div class="w-100 vh-100 d-flex flex-row justify-content-center gap-4 "> -->
                 <div class="row oradores">
                     <div class="col-md-4 card overflow-auto card-wh">
-                        <img src="./assets/img/steve.jpg" class="card-w" alt="..."/>
+                        <img src="./assets/img/steve.jpg" class="card-w" alt="foto de steve jobs"/>
                         <div class="card-body card-w p-2">
                             <h5 class="card-title">Steve Jobs</h5>
                             <p class="card-text overflow-auto">
@@ -164,7 +116,7 @@
                     </div>
                
                     <div class="col-md-4 card overflow-auto card-wh">
-                        <img src="./assets/img/bill.jpg" class="card-w" alt="..."/>
+                        <img src="./assets/img/bill.jpg" class="card-w" alt="foto de bill gates"/>
                         <div class="card-body p-2">
                             <h5 class="card-title">Bill Gates</h5>
                             <p class="card-text overflow-auto">
@@ -178,7 +130,7 @@
                     </div>
                 
                     <div class="col-md-4 card overflow-auto card-wh">
-                        <img src="./assets/img/ada.jpeg" class="card-w" alt="..."/>
+                        <img src="./assets/img/ada.jpeg" class="card-w" alt="foto de ada lovelace"/>
                         <div class="card-body p-2">
                             <h5 class="card-title">Ada Lovelace</h5>
                             <p class="card-text overflow-auto">
@@ -193,17 +145,13 @@
                                 facilis officia voluptas.
                             </p>
                         </div>
-                    </div>
-                <!-- </div> -->
-
             </div>
         </section> 
 
-        <!-- <section class="vw-100 mx-0" id="lugaryfecha"> -->
-        <section class="mx-0" id="lugaryfecha"></section>
+        <section class="mx-0" id="lugaryfecha">
             <div class="row p-0 bg-secondary text-whites w-100">
                 <div class="col-xs-12 col-sm-12 col-md-6 p-0">
-                    <img src="./assets/img/honolulu.jpg" alt="" class="img-100 border border-white" />
+                    <img src="./assets/img/honolulu.jpg" alt="foto de honolulu" class="img-100 border border-white" />
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 p-3 border border-white text-white px-4">
                     <h3>Bs As - Octubre</h3>
@@ -261,5 +209,6 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 </html>
