@@ -1,106 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo" class="logo">
-            <h4 class="header-h4">Conf Bs As</h2>
-        </div>
-        <nav class="nav-header">
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="" class="item item-first">La conferencia</a></li>
-                <li class="nav-li"><a href="" class="item">Los oradores</a></li>
-                <li class="nav-li"><a href="" class="item">El lugar y la fecha</a></li>
-                <li class="nav-li"><a href="" class="item">Conviertete en orador</a></li>
-                <li class="nav-li"><a href="" class="item item-last"> Comprar tickets</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="section-one">
-            <div class="main-container">
-                <div class="main-info">
-                    <h2 class="main-h2">Conf Bs As</h2>
-                    <p class="main-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
-                    <div class="buttons">
-                        <a href="" class="button button-orador">Quiero ser orador</a>
-                        <a href="" class="button button-ticket">Comprar tickets</a>
+
+    <div class="container-fluid px-0 w-100">
+        <header class="row bg-dark w-100 m-0">
+            <nav class="navbar navbar-expand-lg bg-dark p-0 m-0 w-100">
+                <div class="container-fluid w-100">
+                    <a class="navbar-brand text-white" href="#">
+                    <img src="./assets/img/codoacodo.png" alt="Logo" width="100">
+                    Conf. Bs.As
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 just-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#oradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#lugaryfecha">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#formulario">Conviertete en Orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="./pages/comprartickets.html">Comprar Tickets</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="w-100 h-70">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column w-100 vh-100 align-items-end justify-content-center text-white fw-semibold bg-main1 alignitems">
+                            <div class="w-50 text-end margin-carrusel width-carrusel pad-carrusel">
+                                <h2 class="mb-3 text-modif-cen">Conf Bs As</h2>
+                                <p class="mb-4 text-modif-just">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
+                                <div class="alinearbotones">
+                                    <a href="#formulario" class="btn btn-outline-secondary botonmain">Quiero ser orador</a>
+                                    <a href="./pages/comprartickets.html" class="btn btn-success">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column w-100 vh-100 align-items-end justify-content-center text-white fw-semibold bg-main2">
+                            <div class="w-50 text-end p-5 margin-carrusel">
+                                <h2 class="col mb-3">Conf Bs As</h2>
+                                <p class="col mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
+                                <div class="col">
+                                    <a href="" class="btn btn-outline-secondary me-2">Quiero ser orador</a>
+                                    <a href="" class="btn btn-success">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column w-100 vh-100 align-items-end justify-content-center text-white fw-semibold bg-main3">
+                            <div class="w-50 text-end p-5 margin-carrusel">
+                                <h2 class="col mb-3">Conf Bs As</h2>
+                                <p class="col mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa possimus quasi quae? Sint delectus, amet odit temporibus quas cumque omnis quaerat, impedit nobis doloremque quod reiciendis, dicta aliquam perspiciatis eaque.</p>
+                                <div class="col">
+                                    <a href="" class="btn btn-outline-secondary me-2">Quiero ser orador</a>
+                                    <a href="" class="btn btn-success">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </main>    
+
+        <!-- <section class="d-flex flex-column w-100 vh-100 align-items-center" id="oradores">
+            <p class="mt-2">Conoce a los <br> <b class="h5">ORADORES</b></p>
+            <div class="row w-100 vh-100 d-flex flex-row justify-content-center gap-4 overflow-auto">
+                <div class="col-xs-12 col-sm-12 col-md-4 card overflow-auto card-wh overflow-auto">
+                    <img src="./assets/img/steve.jpg" class="card-w" alt="..."/>
+                    <div class="card-body card-w">
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text overflow-auto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 card overflow-auto card-wh overflow-auto">
+                    <img src="./assets/img/bill.jpg" class="card-w" alt="..."/>
+                    <div class="card-body" style="width: 300px">
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium, voluptate dignissimos! Debitis ratione consectetur
+                            labore, dolor alias, quidem incidunt dignissimos tempore fuga
+                            voluptatum velit necessitatibus. Sint dolorum facilis officia
+                            voluptas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 card overflow-auto card-wh">
+                    <img src="./assets/img/ada.jpeg" class="card-w" alt="..."/>
+                    <div class="card-body" style="width: 300px">
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium, voluptate dignissimos! Debitis ratione consectetur
+                            labore, dolor alias, quidem incidunt dignissimos tempore fuga
+                            voluptatum velit necessitatibus. Sint dolorum facilis officia
+                            voluptas. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium, voluptate dignissimos! Debitis ratione
+                            consectetur labore, dolor alias, quidem incidunt dignissimos
+                            tempore fuga voluptatum velit necessitatibus. Sint dolorum
+                            facilis officia voluptas.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <section class="section-two">
-        <p class="section-two-p"><small>Conoce a los</small><br> <h3><b>ORADORES</b></h3></p>
-        <div class="section-two-container">
-            <div class="orador">
-                <img src="./assets/img/steve.jpg" alt="" class="orador-img">
-                <div class="orador-info">
-                    <h3 class="orador-h3">Steve Jobs</h3>
-                    <p class="orador-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptate dignissimos! Debitis ratione consectetur labore, dolor alias, quidem incidunt dignissimos tempore fuga voluptatum velit necessitatibus. Sint dolorum facilis officia voluptas.</p>
-                </div>
-            </div>
-            <div class="orador">
-                <img src="./assets/img/bill.jpg" alt="" class="orador-img">
-                <div class="orador-info">
-                    <h3 class="orador-h3">Bill Gates</h3>
-                    <p class="orador-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptate dignissimos! Debitis ratione consectetur labore, dolor alias, quidem incidunt dignissimos tempore fuga voluptatum velit necessitatibus. Sint dolorum facilis officia voluptas.</p>
-                </div>
-            </div>
-            <div class="orador">
-                <img src="./assets/img/ada.jpeg" alt="" class="orador-img">
-                <div class="orador-info">
-                    <h3 class="orador-h3">Ada Lovelace</h3>
-                    <p class="orador-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptate dignissimos! Debitis ratione consectetur labore, dolor alias, quidem incidunt dignissimos tempore fuga voluptatum velit necessitatibus. Sint dolorum facilis officia voluptas. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-                </div>  
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="section-three">
-            <img src="./assets/img/honolulu.jpg" alt="" class="section-three-img">
-            <div class="section-three-info">
-                <h3>Bs As - Octubre</h3>
-                <p class="section-three-info-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptate dignissimos! Debitis ratione consectetur labore, dolor alias, quidem incidunt dignissimos tempore fuga voluptatum velit necessitatibus. Sint dolorum facilis officia voluptas. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, dolore quas mollitia, commodi harum, similique ex id maiores molestias minus est vel quidem? Maxime cum expedita cupiditate officiis eius rerum?</p>
-                <a href="" class="button button-three">Conoce mas</a>
-            </div>
-        </div>
-    </section>
-    <section class="section-four">
-        <div class="section-form">
-            <p class="section-four-p"><small>Conviertete en un</small><br><h2><b>ORADOR</b></h2></p>
-            <br>
-            <p class="form-p">Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
-            <form action="" class="">
-                <input type="text" placeholder="Nombre" class="input-nombre input">
-                <input type="text" placeholder="Apellido" class="input">
-                <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Sobre que quieres hablar?" class="tema"></textarea>
-                <small><p class="form-p">Recuerda incluir un titulo para tu charla</p></small> 
-                <input type="submit" name="enviar" value="Enviar" class="button button-form">
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div >
-            <ul class="footer">
-                <li class="li-footer"><a href="" class="item item-footer">Preguntas frecuentes</a></li>
-                <li class="li-footer"><a href="" class="item item-footer">Contactanos</a></li>
-                <li class="li-footer"><a href="" class="item item-footer">Prensa</a></li>
-                <li class="li-footer"><a href="" class="item item-footer">Conferencias</a></li>
-                <li class="li-footer"><a href="" class="item item-footer">Terminos y condiciones</a></li>
-                <li class="li-footer"><a href="" class="item item-footer">Privacidad</a></li>
-                <li class="li-footer"><a href="" class="item item-footer">Estudiantes</a></li>
-            </ul> 
-        </div>
-    </footer>
+        </section> -->
 
+        <section class="d-flex flex-column align-items-center  mb-4" id="oradores">
+<!--    <section class="d-flex flex-column w-100 vh-100 align-items-center  mb-4" id="oradores"> -->
+            <p class="mt-2">Conoce a los <br> <b class="h5">ORADORES</b></p>
+            <!-- <div class=""> -->
+            <!-- <div class="w-100 vh-100 d-flex flex-row justify-content-center gap-4 "> -->
+                <div class="row oradores">
+                    <div class="col-md-4 card overflow-auto card-wh">
+                        <img src="./assets/img/steve.jpg" class="card-w" alt="..."/>
+                        <div class="card-body card-w p-2">
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text overflow-auto">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+               
+                    <div class="col-md-4 card overflow-auto card-wh">
+                        <img src="./assets/img/bill.jpg" class="card-w" alt="..."/>
+                        <div class="card-body p-2">
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text overflow-auto">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Praesentium, voluptate dignissimos! Debitis ratione consectetur
+                                labore, dolor alias, quidem incidunt dignissimos tempore fuga
+                                voluptatum velit necessitatibus. Sint dolorum facilis officia
+                                voluptas.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4 card overflow-auto card-wh">
+                        <img src="./assets/img/ada.jpeg" class="card-w" alt="..."/>
+                        <div class="card-body p-2">
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text overflow-auto">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Praesentium, voluptate dignissimos! Debitis ratione consectetur
+                                labore, dolor alias, quidem incidunt dignissimos tempore fuga
+                                voluptatum velit necessitatibus. Sint dolorum facilis officia
+                                voluptas. Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Praesentium, voluptate dignissimos! Debitis ratione
+                                consectetur labore, dolor alias, quidem incidunt dignissimos
+                                tempore fuga voluptatum velit necessitatibus. Sint dolorum
+                                facilis officia voluptas.
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+        </section> 
+
+        <!-- <section class="vw-100 mx-0" id="lugaryfecha"> -->
+        <section class="mx-0" id="lugaryfecha"></section>
+            <div class="row p-0 bg-secondary text-whites w-100">
+                <div class="col-xs-12 col-sm-12 col-md-6 p-0">
+                    <img src="./assets/img/honolulu.jpg" alt="" class="img-100 border border-white" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 p-3 border border-white text-white px-4">
+                    <h3>Bs As - Octubre</h3>
+                    <p class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium, voluptate dignissimos! Debitis ratione consectetur
+                    labore, dolor alias, quidem incidunt dignissimos tempore fuga
+                    voluptatum velit necessitatibus. Sint dolorum facilis officia
+                    voluptas. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+                    ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum Lorem
+                    ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor
+                    sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem
+                    ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Sed, dolore quas mollitia, commodi harum,
+                    similique ex id maiores molestias minus est vel quidem? Maxime cum
+                    expedita cupiditate officiis eius rerum?
+                    </p>
+                    <a href="" class="btn btn-outline-secondary me-2">Conoce mas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex flex-row w-100 mx-0 justify-content-center" id="formulario">
+            <div class="d-flex flex-column align-content-center mt-2 p-3">
+                <p class="text-center"><small>Conviertete en un</small> <br> <b class="h3">ORADOR</b></p>
+                <p class="text-cente">Anotate como orador para dar una <span class="punteado">charla ignite</span>. Cuentanos de que quieres hablar!</p>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" placeholder="Nombre" class="rounded-1 border border-1 border-secondary w-100">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" placeholder="Apellido" class="rounded-1 border border-1 border-secondary w-100">
+                        </div>
+                    </div>
+                    <textarea name="" id="" cols="10" rows="5" placeholder="Sobre que quieres hablar?" class="w-100 rounded-1 border border-1 border-secondary"></textarea>
+                    <small><p class="">Recuerda incluir un titulo para tu charla</p></small>
+                    <input type="submit" name="enviar" value="Enviar" class="btn btn-success w-100 mb-4" />
+                </form>
+            </div>
+        </section>
+
+        <footer>
+           <ul class="footer">
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Preguntas frecuentes</a></li>
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Contactanos</a></li>
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Prensa</a></li>
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Conferencias</a></li>
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Terminos y condiciones</a></li>
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Privacidad</a></li>
+                <li class="li-footer"><a href="./pages/error404.html" class="item item-footer">Estudiantes</a></li>
+           </ul>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
