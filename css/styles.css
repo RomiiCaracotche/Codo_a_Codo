@@ -107,9 +107,55 @@
     text-align: end;
 }
 
+.h-tic{
+    height: 2rem;
+}
+
+.h-tot{
+    height: 3.5rem;
+} 
+
+.bg-tic{
+    background-color: rgb(207, 226, 255);
+}
+
+.bg-but{
+    background-color: rgb(150, 201, 62);
+}
+
+.bg-but:hover{
+    background-color: red;
+}
+
+.text-tic{
+    color: rgb(0, 64, 128);
+}
+
+.borde-tic{
+    border: 1px solid rgb(152, 151, 145);
+}
+
+.w-promo{
+    width: 100%;
+}
+
+.m-tic{
+    width: 60%;
+} 
+
+.gap-tic{
+    gap: 40px;
+}
+
+.max-w{
+    max-width: 15rem;
+}
+
+
 /* 768 y 480 */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 480px) { */
     .width-carrusel{
         width: 100%;
         margin: 0;
@@ -171,11 +217,28 @@
     .div-carrusel{
         width: 90%;
         text-align: center;
+    }
+
+    .w-promo{
+        width: 90%;
+    }
+
+    .df-column{
+        flex-direction: column;
+    }
+
+    .max-w{
+        max-width: 20rem;
+    }
+
+    .mb-resp{
+        margin-bottom: 1.5rem;
     }
 
  }
 
- @media screen and (min-width: 481px) and (max-width: 768px) {
+ @media screen and (min-width: 577px) and (max-width: 768px) {
+ /* @media screen and (min-width: 481px) and (max-width: 829px) { */
     .width-carrusel{
         width: 100%;
         margin: 0;
@@ -238,7 +301,30 @@
         width: 90%;
         text-align: center;
     }
+
+    .w-promo{
+        width: 90%;
+    }
+
+    .m-tic{
+        width: 100%;
+    }
+
+    .gap-tic{
+        gap: 10px;
+    }
+
+    .mb-resp{
+        margin-bottom: 1.5rem;
+    }
     
 }
 
+@media screen and (min-width: 769px) and (max-width: 1077px) {
+/* @media screen and (min-width: 829px) and (max-width: 1077px) { */
+    
+    .m-tic{
+        width: 80%;
+    }
 
+}
