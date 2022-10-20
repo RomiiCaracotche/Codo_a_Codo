@@ -79,29 +79,29 @@
 
             <form action="" class="m-tic">
                 <div class="row">
-                    <div class="col-md-6 mb-resp"><input type="text" placeholder="Nombre" class="rounded-1 borde-tic w-100 h-tic ps-2"></div>
-                    <div class="col-md-6"><input type="text" placeholder="Apellido" class="col-6 rounded-1 borde-tic w-100 h-tic ps-2"></div>  
-                    <div class="col-md-12 mt-4"><input type="text" placeholder="Email" class="col w-100 h-tic rounded-1 borde-tic ps-2"></div>
+                    <div class="col-md-6 mb-resp"><input type="text" id="nombre" placeholder="Nombre" class="rounded-1 borde-tic w-100 h-tic ps-2"></div>
+                    <div class="col-md-6"><input type="text" id="apellido" placeholder="Apellido" class="col-6 rounded-1 borde-tic w-100 h-tic ps-2"></div>  
+                    <div class="col-md-12 mt-4"><input type="email" id="email" placeholder="Email" class="col w-100 h-tic rounded-1 borde-tic ps-2"></div>
                     <div class="row p-0 mx-0">
                         <div class="col-md-6 mt-3">
                             <label for="" class="col mb-2">Cantidad</label>
-                            <input type="text" class="col rounded-1 borde-tic w-100 h-tic">
+                            <input type="number" id="cantidad" class="col rounded-1 borde-tic w-100 h-tic" min="1">
                         </div>
                         <div class="col-md-6 mt-3">
                             <label for="" class="col mb-2">Categoría</label>
-                            <select name="" id="" class="col rounded-1 borde-tic w-100 h-tic ps-2">
+                            <select name="" id="categoria" class="col rounded-1 borde-tic w-100 h-tic ps-2">
                                 <option value="">-- Seleccione --</option>
                                 <option value="estudiante">Estudiante</option>
                                 <option value="trainee">Trainee</option>
                                 <option value="junior">Junior</option>
                             </select>
                         </div>
-                        <div>
-                            <div class="col-md-12 rounded-1 bg-tic my-3 mt3 h-tot ps-2"><p class="text-tic pt-3">Total a pagar: $</p></div>
+                        <div id="">
+                            <div id="errorDiv" class="col-md-12 rounded-1 bg-tic my-3 h-tot ps-2"><p id="total" class="text-tic pt-3">Total a pagar: $</p></div>
                         </div>
                     </div>
-                    <div class="col-md-6"><button class="btn btn-success text-white w-100 mb-4">Borrar</button></div>
-                    <div class="col-md-6"><button class="btn btn-success text-white w-100 mb-4">Resumen</button></div>
+                    <div class="col-md-6"><button id="borrar" class="btn btn-success text-white w-100 mb-4">Borrar</button></div>
+                    <div class="col-md-6"><button id="resumen" class="resumen btn btn-success text-white w-100 mb-4">Resumen</button></div>
                 </div>
             </form>
     </div>
@@ -122,6 +122,6 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+    <script src="./../js/main.js"></script>
 </body>
 </html>
