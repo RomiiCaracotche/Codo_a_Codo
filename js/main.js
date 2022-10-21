@@ -34,11 +34,12 @@ resumen.addEventListener('click', function(e){
         } 
     }           
     else{
-        texto.style.paddingTop = "15px";
+        alert("Debe completar todos los campos!!!"); 
+        /* texto.style.paddingTop = "15px";
         texto.style.color = "white";
         texto.textContent = "Complete todos los campos!!!";
-        errorDiv.style.backgroundColor = "red";
-        errorDiv.style.textAlign = "center";  
+        errorDiv.style.backgroundColor = "rgb(224, 41, 41)";
+        errorDiv.style.textAlign = "center"; */  
     }
 })
 
