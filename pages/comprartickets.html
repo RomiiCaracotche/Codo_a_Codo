@@ -77,34 +77,50 @@
             <p class="mt-3 mb-0">VENTA</p>
             <h2 class="mb-4 fw-bolder">Valor de Ticket $200</h2>
 
-            <form action="" class="m-tic">
+            <form action="#" class="m-tic" id="formulario">
                 <div class="row">
-                    <div class="col-md-6 mb-resp"><input type="text" id="nombre" placeholder="Nombre" class="rounded-1 borde-tic w-100 h-tic ps-2"></div>
-                    <div class="col-md-6"><input type="text" id="apellido" placeholder="Apellido" class="col-6 rounded-1 borde-tic w-100 h-tic ps-2"></div>  
-                    <div class="col-md-12 mt-4"><input type="email" id="email" placeholder="Email" class="col w-100 h-tic rounded-1 borde-tic ps-2"></div>
+                    <div class="col-md-6 mb-resp">
+                        <input type="text" id="nombre" placeholder="Nombre" class="rounded-1 borde-tic w-100 h-tic ps-2 form-control" required>
+                        <div id="nombreMsj" class=""></div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="apellido" placeholder="Apellido" class="col-6 rounded-1 borde-tic w-100 h-tic ps-2 form-control" required>
+                        <div id="apellidoMsj" class=""></div>
+                    </div>  
+                    <div class="col-md-12 mt-4">
+                        <input type="email" id="email" placeholder="Email" class="col w-100 h-tic rounded-1 borde-tic ps-2 form-control" required>
+                        <div id="emailMsj" class=""></div>
+                    </div>
                     <div class="row p-0 mx-0">
                         <div class="col-md-6 mt-3">
                             <label for="" class="col mb-2">Cantidad</label>
-                            <input type="number" id="cantidad" class="col rounded-1 borde-tic w-100 h-tic" min="1">
+                            <input type="number" id="cantidad" class="col rounded-1 borde-tic w-100 h-tic form-control" min="1" required>
+                            <div id="cantidadMsj" class=""></div>
                         </div>
                         <div class="col-md-6 mt-3">
                             <label for="" class="col mb-2">Categoría</label>
-                            <select name="" id="categoria" class="col rounded-1 borde-tic w-100 h-tic ps-2">
+                            <select name="" id="categoria" class="col rounded-1 borde-tic w-100 h-tic pt-1 form-select form-control" required>
                                 <option value="">-- Seleccione --</option>
+                                <option value="ninguna">Ninguna</option>
                                 <option value="estudiante">Estudiante</option>
                                 <option value="trainee">Trainee</option>
                                 <option value="junior">Junior</option>
                             </select>
+                            <div id="categoriaMsj" class=""></div>
                         </div>
-                        <div id="">
-                            <div id="errorDiv" class="col-md-12 rounded-1 bg-tic my-3 h-tot ps-2"><p id="total" class="text-tic pt-3">Total a pagar: $</p></div>
+                        <div>
+                            <div class="col-md-12 rounded-1 bg-tic my-3 h-tot ps-2 pt-3"><p class="text-tic pt-3 d-inline">Total a pagar: $</p><span class="d-inline" id="total"></span></div></div>
                         </div>
                     </div>
-                    <div class="col-md-6"><button id="borrar" class="btn btn-success text-white w-100 mb-4">Borrar</button></div>
-                    <div class="col-md-6"><button id="resumen" class="resumen btn btn-success text-white w-100 mb-4">Resumen</button></div>
-                </div>
+                    <div class="row">
+                        <div class="col-md-6"><input type="submit" id="borrar" class="btn btn-success text-white w-100 mb-4" value="Borrar"></div>
+                        <div class="col-md-6"><input type="submit" id="resumen" class="resumen btn btn-success text-white w-100 mb-4" value="Resumen"></div>
+                    </div>
+                
+               </div> 
             </form>
-    </div>
+        </div>
+
     
         <footer>
             <ul class="footer">
